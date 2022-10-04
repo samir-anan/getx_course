@@ -4,6 +4,8 @@ import 'package:getx_course/view/screenOne.dart';
 import 'package:getx_course/view/screenFour.dart';
 import 'package:getx_course/view/screenThree.dart';
 
+import '../utils/myBindings.dart';
+
 class HomePage extends StatelessWidget {
   HomePage({Key? key}) : super(key: key);
 
@@ -21,7 +23,8 @@ class HomePage extends StatelessWidget {
             Center(
               child: ElevatedButton(
                   onPressed: () {
-                    Get.to(ScreenOne());
+                  //  Get.to(ScreenOne());
+                   Get.to(() => ScreenOne(),binding: MyBindings());
                   },
                   child: Text("Screen One")),
             ),
@@ -32,7 +35,7 @@ class HomePage extends StatelessWidget {
             Center(
               child:
                   ElevatedButton(onPressed: () {
-                    Get.to(ScreenThree());
+                  Get.to(() => ScreenThree());
                   }, child: Text("Screen Three")),
             ),
             Center(

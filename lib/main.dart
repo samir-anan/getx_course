@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
+import 'package:getx_course/utils/myBindings.dart';
 import 'package:getx_course/view/home.dart';
 import 'package:getx_course/view/screenOne.dart';
 
@@ -22,11 +23,10 @@ class MyApp extends StatelessWidget {
           buttonColor: Colors.lightBlue
       ),
       home: HomePage(),
+      // initialBinding: MyBindings(),
       getPages: [
         GetPage(name: '/one', page: () => ScreenOne()),
-       /* GetPage(name: '/two', page: () => ScreenTwo()),
-        GetPage(name: '/three', page: () => ScreenThree()),
-        GetPage(name: '/four', page: () => ScreenFour()),*/
+      //  GetPage(name: '/one', page: () => ScreenOne(), binding: MyBindings()),
       ],
     );
   }

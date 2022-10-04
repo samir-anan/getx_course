@@ -9,7 +9,7 @@ import '../controller/rebuildController.dart';
 class ScreenThree extends StatelessWidget {
   ScreenThree({Key? key}) : super(key: key);
 
-  final RebuildGetXController extController = Get.put(RebuildGetXController());
+  final RebuildGetXController extController = Get.put(RebuildGetXController(),permanent: true);
 
   @override
   Widget build(BuildContext context) {
