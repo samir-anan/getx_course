@@ -1,6 +1,6 @@
 
 import 'package:get/get.dart';
-/* Get Builder
+/* Get Builder */
 class HomeController extends GetxController{
   int counter = 0;
 
@@ -15,9 +15,10 @@ class HomeController extends GetxController{
   }
 
 }
-*/
+
 
 // GetX
+/*
 class HomeController extends GetxController{
   RxInt counter = 0.obs;
 
@@ -30,3 +31,5 @@ class HomeController extends GetxController{
   }
 
 }
+
+ */

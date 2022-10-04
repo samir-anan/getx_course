@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_course/controller/homeController.dart';
 
-class HomeGetBuilder extends StatelessWidget {
-  HomeGetBuilder({Key? key}) : super(key: key);
+class HomePages extends StatelessWidget {
+  HomePages({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -54,6 +54,7 @@ class HomeGetBuilder extends StatelessWidget {
     );
   }
 }
+
 class HomeGetX extends StatelessWidget {
   HomeGetX({Key? key}) : super(key: key);
 
@@ -106,7 +107,6 @@ class HomeGetX extends StatelessWidget {
     );
   }
 }
-
 class HomeOBX extends StatelessWidget {
   HomeOBX({Key? key}) : super(key: key);
   final HomeController controller = Get.put(HomeController());
@@ -157,14 +157,12 @@ class HomeOBX extends StatelessWidget {
     );
   }
 }
-
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
   @override
   State<HomePage> createState() => _HomePageState();
 }
-
 class _HomePageState extends State<HomePage> {
   var counter = 0;
   @override

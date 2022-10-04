@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:getx_course/home.dart';
+import 'package:get/get_navigation/src/routes/get_route.dart';
+import 'package:getx_course/view/home.dart';
+import 'package:getx_course/view/screenOne.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,9 +19,15 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           primaryColor: Colors.blueAccent,
           primarySwatch: Colors.blue,
-        buttonColor: Colors.lightBlue
+          buttonColor: Colors.lightBlue
       ),
-      home: HomeOBX(),
+      home: HomePage(),
+      getPages: [
+        GetPage(name: '/one', page: () => ScreenOne()),
+       /* GetPage(name: '/two', page: () => ScreenTwo()),
+        GetPage(name: '/three', page: () => ScreenThree()),
+        GetPage(name: '/four', page: () => ScreenFour()),*/
+      ],
     );
   }
 }
